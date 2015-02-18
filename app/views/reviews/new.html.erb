@@ -1,0 +1,7 @@
+<h1> Give us your review, please! </h1>
+
+<%= form_for [@restaurant, @review] do |f| %>
+  <%= f.text_field :content %>
+  <%= f.number_field :rating %>
+  <%= f.submit "add a review" %>
+<% end %>
